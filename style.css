@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jua", sans-serif;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+#rabbit {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    background-image: url(image/rabbitcommon.png);
+    top: 40px;
+    
+    transform: translateX(-50%);
+    transition: left 0.5s;
+}
+
+#damagochi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+}
+
+#damagochi {
+    width: 300px;
+    height: 300px;
+    background-image: url('image/제목을\ 입력해주세요_-001\ \(4\).png');
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#status {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(47, 143, 87);
+    margin-left: 550px; /* damagochi의 width + 20px 간격 */
+    font-family: "Jua", sans-serif;
+    font-size: x-large;
+    color: rgb(255, 254, 168);
+    font-weight: bold;
+    text-align: center;
+}
+
+#action {
+    font-family: "Jua", sans-serif;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: auto; /* 너비를 자동으로 설정하여 가로 중앙 정렬되도록 변경 */
+    height: 100px;
+    
+    
+    
+}
+
+#action1 {
+    margin-right: 20px;
+    background-color: rgb(202, 94, 94);
+    cursor: pointer;
+}
+
+#action2 {
+    margin-right: 20px;
+    background-color: rgb(255, 181, 42);
+    cursor: pointer;
+}
+
+#action3 {
+    margin-right: 20px;
+    background-color: rgb(4, 209, 236);
+    cursor: pointer;
+}
+
+#action4 {
+    cursor: pointer;
+    background-color: rgb(103, 29, 153);
+}
+
